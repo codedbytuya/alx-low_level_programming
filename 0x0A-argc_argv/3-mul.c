@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-    int mul;
+    int mul, a, b;
 
     /* Check if the correct number of arguments is provided */
     if (argc != 3)
@@ -19,7 +19,9 @@ int main(int argc, char **argv)
     }
 
     /* Perform the multiplication of the two command-line arguments */
-    mul = atoi(argv[1]) * atoi(argv[2]);
+    a = atoi(argv[1]);
+    b = atoi(argv[2]);
+    mul = a * b;
 
     /* Print the result of the multiplication */
     printf("Result: %d\n", mul);
