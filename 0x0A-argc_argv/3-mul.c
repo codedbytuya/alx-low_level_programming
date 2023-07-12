@@ -10,21 +10,17 @@
  */
 int main(int argc, char **argv)
 {
-    int a, b;
+	int x, y;
 
-    /* Check if the correct number of arguments is provided */
-    if (argc != 3)
-    {
-        printf("Error\n");
-        return 1; /* Return 1 to indicate an error */
-    }
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
 
-    /* Perform the multiplication of the two command-line arguments */
-    a = atoi(argv[1]);
-    b = atoi(argv[2]);
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
+	printf("%d\n", x * y);
 
-    /* Print the result of the multiplication */
-    printf("Result: %d\n", a * b);
-
-    return 0; /* Return 0 to indicate successful execution */
+	return (0);
 }
