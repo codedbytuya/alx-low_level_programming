@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point of the program.
@@ -9,7 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-    int mul, a, b;
+    int a, b;
 
     /* Check if the correct number of arguments is provided */
     if (argc != 3)
@@ -21,10 +22,9 @@ int main(int argc, char **argv)
     /* Perform the multiplication of the two command-line arguments */
     a = atoi(argv[1]);
     b = atoi(argv[2]);
-    mul = a * b;
 
     /* Print the result of the multiplication */
-    printf("Result: %d\n", mul);
+    printf("Result: %d\n", a * b);
 
     return 0; /* Return 0 to indicate successful execution */
 }
