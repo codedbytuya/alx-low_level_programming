@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _calloc - Allocates memory for an array and returns a pointer to the allocated memory.
  *
